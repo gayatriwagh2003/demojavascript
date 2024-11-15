@@ -1,0 +1,14 @@
+create two files 1) index.html 2) Dockerfile
+
+FROM nginx 
+COPY  index.html\usr\share\nginx\html\
+
+comand :- sudo Docker build -t (project_name) .
+
+output: image genrate
+
+2) sudo Docker images 
+
+3) sudo Docker run -d -p 8080:80 (project_name)
+
+open Brower:- 0.0.0.0:8080 ----> disply index.htm
